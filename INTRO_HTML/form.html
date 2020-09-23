@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟร์อม</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    
+    <font face="TH sarabunPSK" style="font-size:30px;" >แบบฟร์อม</font>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
+
+    <form>
+        <table border="1" width="90%" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ประเภทข้อมูล</th>
+                    <th>ช่องกรอกข้อมูล</th>
+                </tr>
+
+
+            </thead>
+             
+            <tr class="table-secondary">
+                <td>รหัสนักศึกษา:</td>
+                <td><input type="text" required/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>ชื่อ-นามสกุลนักศึกษา:</td>
+                <td><input type="text" required/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>รหัส่ผ่าน: </td>
+                <td><input type="password" required/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>เพศ:</td>
+                <td><input type="radio" name="sex" value="1" required checked/> ชาย
+                    <input type="radio" name="sex" value="2" /> หญิง </td>
+            </tr>
+            <tr class="table-secondary">
+                <td>งานอดิเรก:</td>
+                <td><input type="checkbox" value="1" required checked/> อ่านหนังสือ
+                    <input type="checkbox" value="2" /> ดูโทรทัศน์
+                    <input type="checkbox" value="3" /> เล่นกีฬา </td>
+            </tr>
+            <tr class="table-secondary" >
+                <td>สัตว์ที่ชอบ:</td>
+                <td><select class="form-control" id="sel1">
+                    <option>หมา</option>
+                    <option>แมว</option>
+                    <option>หนู</option>
+                    <option>เต่า</option>
+                    <option>ไก่</option>
+                    <option>นก</option>
+                    <option>งู</option>
+
+                </select></td>
+                
+            </tr>
+            <tr class="table-secondary">
+                <td>อัพโหลดข้อมูล:</td>
+                <td><input type="file" /></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>วันเกิด:</td>
+                <td><input type="date" required/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>ที่อยู่:</td>
+                <td><textarea class="form-control" rows="5" id="comment" required></textarea></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>ส่วนสูง(ซม.):</td>
+                <td><input type="number" required min="80" min="250"/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>น้ำหนัก(กม.):</td>
+                <td><input type="number" required min="10" max="200"/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>อีเมล:</td>
+                <td><input type="email" required/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>เว็บของคุณ:</td>
+                <td><input type="url" required/></td>
+            </tr>
+            <tr class="table-secondary">
+                <td>เบอร์โทร:</td>
+                <td><input type="tel" required/></td>
+            </tr>
+           
+        </table>
+        <input type="submit" value="ยืนยันข้อมูล" class="btn btn-success" />
+        <input type="reset" value="ยกเลิก" class="btn btn-danger" />
+ 
+
+  
+    </form>
+</body>
+</html>
